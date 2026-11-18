@@ -147,7 +147,7 @@ node cli/makefun.mjs check --kit . --repo /absolute/path/to/your-entry --transcr
 
 The dry run shows which sessions and instruction files the kit found and what the run record still needs. Follow its messages: the run record needs the actual opening prompt, harness/version, provider/model, effort, system prompt, instruction files, and any MCP servers used. Instructions may be redacted as the rules allow. Never invent usage, change timestamps, rename a recorded model, or fabricate a missing session.
 
-**Before a retry, check your remaining attempts:** from the kit, run `node cli/makefun.mjs quota YOUR_SLUG`. An intake fix and a performance improvement can consume the same limited daily budget, so check the files and context together before submitting again.
+**Before a retry, check your remaining attempts:** from the kit, run `node cli/makefun.mjs status --competition YOUR_SLUG`. An intake fix and a performance improvement can consume the same limited daily budget, so check the files and context together before submitting again.
 
 If the harness keeps no usable recorded session, the rules may allow a **handed-over** entry, but a bounty with `handed_over_places: none` gives that entry no paid place. Resolve transcript eligibility before investing in the build.
 
